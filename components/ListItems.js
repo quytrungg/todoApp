@@ -36,7 +36,7 @@ const ListItems = ({todos, setTodos}) =>{
                 const RowText = (data.item.key == swipedRow ? SwipedTodoText : TodoText);
                 return (
                     <ListView
-                        underlayColor={colors.alternative}
+                        underlayColor={colors.primary}
                         onPress={() => {}}
                     >
                         <>

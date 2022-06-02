@@ -31,8 +31,9 @@ const Home = () =>{
         setTodos([]);
     }
 
-    // Modal visibility
+    // Modal visibility & input value
     const [modalVisible, setModalVisible] = useState(false);
+    const [todoInputValue, setTodoInputValue] = useState();
 
     return(
         <>
@@ -44,6 +45,8 @@ const Home = () =>{
             <InputModal 
                 modalVisible = {modalVisible}
                 setModalVisible = {setModalVisible}
+                todoInputvalue = {todoInputValue}
+                setTodoInputValue={setTodoInputValue}
             />
         </>
     );
